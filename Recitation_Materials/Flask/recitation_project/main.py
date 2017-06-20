@@ -5,6 +5,7 @@ from flask import Flask, redirect
 #call for the bluueprint
 from views.login import login_blueprint
 from views.profile import profile_blueprint
+from views.registration import registration_blueprint
 
 app = Flask(__name__)
 """
@@ -12,6 +13,7 @@ Blue prints of our login (logger and unlogger) and profile (profile) views
 """
 app.register_blueprint(login_blueprint)
 app.register_blueprint(profile_blueprint)
+app.register_blueprint(registration_blueprint)
 
 # by default, direct to login
 @app.route("/")

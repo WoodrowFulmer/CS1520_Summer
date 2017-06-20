@@ -5,12 +5,13 @@
 	</head>
 	<body>
 		<form action="" method="post">
-			Username:  <input type="text" name="user" />
+			New Username:  <input type="text" name="user" />
 			<br />
-			Password:  <input type="text" name="pass" />
+			New Password:  <input type="text" name="pass" />
+			<br />
+			Verify Password:  <input type="text" name="verify" />
 			<br />
 			<input type="submit" value="submit" />
 		</form>
-		<a href="{{ url_for("registration.register") }}">Create new profile!</a>
 	</body>
 </html>
